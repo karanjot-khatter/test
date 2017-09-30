@@ -10,7 +10,12 @@
  <body>
   <div class="container">
    <div class="table-responsive">
-    <h1 align="center">Mobile phone masts</h1>
+    <h1 align="center">CSV File to HTML Table Using AJAX jQuery</h1>
+    <br />
+    <div align="center">
+     <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>
+    </div>
+    <br />
     <div id="employee_table">
     </div>
    </div>
@@ -19,7 +24,8 @@
 </html>
 <script>
 $(document).ready(function(){
-$.ajax({
+ $('#load_data').click(function(){
+   $.ajax({
    url:"data.csv",
    dataType:"text",
    success:function(data)
@@ -44,8 +50,9 @@ $.ajax({
     }
     table_data += '</table>';
     $('#employee_table').html(table_data);
-   }
+ }
   });
-  );
- ;
+ });
+ 
+});
 </script>
