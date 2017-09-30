@@ -18,8 +18,9 @@
   </div>
  </body>
 </html>
-<script type="text/javascript">
- $.get('data.csv', function(data) {
+
+<script>
+$(document).ready(function(){
     var employee_data = data.split(/\r?\n|\r/);
     var table_data = '<table class="table table-bordered table-striped">';
     for(var count = 0; count<employee_data.length; count++)
@@ -41,5 +42,13 @@
     }
     table_data += '</table>';
     $('#employee_table').html(table_data);
-   });
+   }
+  });
+    $.ajax({
+   url:"data.csv",
+   dataType:"text",
+   success:function(data)
+ });
+ 
+;
 </script>
