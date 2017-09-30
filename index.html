@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
  <head>
   <title>CSV File to HTML Table Using AJAX jQuery</title>
@@ -22,13 +21,14 @@
   </div>
  </body>
 </html>
+
 <script>
 $(document).ready(function(){
- $('#load_data').click(function(){
-   $.ajax({
+  $.ajax({
    url:"data.csv",
    dataType:"text",
    success:function(data)
+   {
     var employee_data = data.split(/\r?\n|\r/);
     var table_data = '<table class="table table-bordered table-striped">';
     for(var count = 0; count<employee_data.length; count++)
@@ -50,7 +50,7 @@ $(document).ready(function(){
     }
     table_data += '</table>';
     $('#employee_table').html(table_data);
- }
+   }
   });
  });
  
