@@ -52,13 +52,13 @@
 $(document).ready(function(){
  $('#load_data').click(function(){
   $.ajax({
-   url:"ascending.py.csv",
+   url:"ascending.py",
    dataType:"text",
    success:function(data)
    {
     var employee_data = data.split(/\r?\n|\r/);
     var table_data = '<table class="table table-bordered table-striped">';
-    for(var count = 0; count<10; count++)
+    for(var count = 0; count<6; count++)
     {
      var cell_data = employee_data[count].split(",");
      table_data += '<tr>';
