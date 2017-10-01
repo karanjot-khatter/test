@@ -14,8 +14,8 @@ import csv
 
 data = csv.reader(open("data.csv"))
 
-for line in sorted(data, key=operator.itemgetter(10), reverse=True):
-    print(line)
+for line in sorted(data,10, key=operator.itemgetter(10), reverse=True):
+       print(line)
 
 
 
