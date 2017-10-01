@@ -51,16 +51,18 @@
 <script>
 $(document).ready(function(){
  $('#load_data').click(function(){
-  $.ajax({
-   url:"ascending.py",
-   dataType:"text",
-   success:callbackFunc
-   {
-   function callbackFunc(response) {
-    // do something with the response
-    console.log(response);
-  });
- });
- 
-});
+    $.ajax({
+        type: "POST",
+        url: "ascending.py",
+        dataType: "html",
+        success: function(msg) {
+            console.log(msg);
+            $("#swiss").html(msg);
+        },
+        error: function (xhr, status, error) {
+            console.log(error);
+         }
+    });
+}
+
 </script>
