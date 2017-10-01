@@ -48,11 +48,23 @@
     </div>
     <br />
 	
+	
+<input type="text" name="name" id="name">
+<button type="button" id="home" onclick="validate()" value="checkvalue">
 <script>
-$(document).ready(function(){
- $('#load_data').click(function(){
-  $.ajax({
-   url:"ascending.py",
-   dataType:"text",
-   success:function(data)
-</script>
+$('#id').click(function(){
+
+ $.ajax({
+      type:'get',
+      url:'ascending.py',
+      cache:false,
+      async:asynchronous,
+      dataType:json, //if you want json
+      success: function(data) {
+        <put your custom validation here using the response from data structure >
+      },
+      error: function(request, status, error) {
+        <put your custom code here to handle the call failure>
+      }
+   });
+});
