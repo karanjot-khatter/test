@@ -25,7 +25,7 @@
  $.get('data.csv', function(data) {
     var employee_data = data.split(/\r?\n|\r/);
     var table_data = '<table class="table table-bordered table-striped">';
-    for(var count =0; cell_count<5; count++)
+    for(var count =0; count<5; count++)
     {
      var cell_data = employee_data[count].split(",");
      table_data += '<tr>';
