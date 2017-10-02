@@ -44,11 +44,19 @@
 
     <br />
     <div align="center">
-     <button type="button" name="load_data" id="load_data" class="btn btn-info">Ascending or desending</button>
+     <button type="button" name="load_data" id="load_data" class="btn btn-info">Decending</button>
     </div>
     <br />
 
 <script>
+function toggle(button)
+{
+  if(document.getElementById("load_data").value=="Ascending"){
+   document.getElementById("load_data").value="Descending";}
+
+  else if(document.getElementById("load_data").value=="Descending"){
+   document.getElementById("load_data").value="Ascending";}
+   
 $(document).ready(function(){
  $('#load_data').click(function(){
   $.ajax({
@@ -58,7 +66,7 @@ $(document).ready(function(){
    {
     var employee_data = data.split(/\r?\n|\r/);
     var table_data = '<table class="table table-bordered table-striped">';
-    for(var count = 0; count<employee_data.length; count++)
+    for(var count = 0; count<6; count++)
     {
      var cell_data = employee_data[count].split(",");
      table_data += '<tr>';
