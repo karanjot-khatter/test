@@ -49,13 +49,12 @@
     <br />
 	
 <script>
-
 $(document).ready(function(){
  $('#load_data').click(function(){
   $.ajax({
    url:"data2.csv",
    dataType:"text",
-   success:function(data)
+   success:callbackFunc
    {
     var employee_data = data.split(/\r?\n|\r/);
     var table_data = '<table class="table table-bordered table-striped">';
@@ -79,6 +78,8 @@ $(document).ready(function(){
     table_data += '</table>';
     $('#employee_table').html(table_data);
    }
+   function callbackFunc(response) {
+	console.log(response);
   });
  });
  
