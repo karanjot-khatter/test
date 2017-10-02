@@ -48,18 +48,6 @@
     </div>
     <br />
 	
-<script type="text/javascript">
-function toggle(button)
-{
-  if(document.getElementById("load_data").value=="Decending"){
-   document.getElementById("load_data").value="ON";}
-
-  else if(document.getElementById("load_data").value=="ON"){
-   document.getElementById("load_data").value="Decending";}
-}
-}
-</script>
-
 <script>
    
 $(document).ready(function(){
@@ -71,7 +59,7 @@ $(document).ready(function(){
    {
     var employee_data = data.split(/\r?\n|\r/);
     var table_data = '<table class="table table-bordered table-striped">';
-    for(var count = 0; count<6; count++)
+    for(var count = 0; count>6; count++)
     {
      var cell_data = employee_data[count].split(",");
      table_data += '<tr>';
