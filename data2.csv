@@ -1,6 +1,6 @@
-['Property Name', 'Property Address [1]', 'Property  Address [2]', 'Property Address [3]', 'Property Address [4]', 'Unit Name', 'Tenant Name', 'Lease Start Date', 'Lease End Date', 'Lease Years', 'Current Rent']
-['Seacroft Gate (Chase) - Block 2', 'Telecomms Apparatus', 'Leeds', '', 'LS14', 'Seacroft Gate (Chase) - Block 2 WYK 0414', 'Hutchinson3G Uk Ltd&Everything Everywhere Ltd', '21-Aug-07', '20-Aug-32', '25', '12750']
-['Seacroft Gate (Chase) - Block 2', 'Telecomms Apparatus', 'Leeds', '', 'LS14', 'Seacroft Gate (Chase) block 2-Telecom App.', 'Vodafone Ltd.', '30-Jan-04', '29-Jan-29', '25', '12250']
-['Armley - Burnsall Grange', 'Armley', 'LS13', '', '', 'Burnsall Grange CSR 37865', 'O2 (UK) Ltd', '26-Jul-07', '25-Jul-32', '25', '12000']
-['Queenswood Heights', 'Queenswood Heights', 'Queenswood Gardens', 'Headingley', 'Leeds', 'Queenswood Hgt-Telecom App.', 'Vodafone Ltd', '08-Nov-04', '07-Nov-29', '25', '09500']
-['Potternewton Crescent', 'Potternewton Est Playing Field', '', '', 'LS7', 'Potternewton Est Playing Field', 'Arqiva Ltd', '24-Jun-99', '23-Jun-19', '20', '06600']
+Property Name,Property Address [1],Property  Address [2],Property Address [3],Property Address [4],Unit Name,Tenant Name,Lease Start Date,Lease End Date,Lease Years,Current Rent
+Potternewton Crescent,Potternewton Est Playing Field,,,LS7,Potternewton Est Playing Field,Arqiva Ltd,24-Jun-99,23-Jun-19,20,6600
+Queenswood Heights,Queenswood Heights,Queenswood Gardens,Headingley,Leeds,Queenswood Hgt-Telecom App.,Vodafone Ltd,08-Nov-04,07-Nov-29,25,9500
+Armley - Burnsall Grange,Armley,LS13,,,Burnsall Grange CSR 37865,O2 (UK) Ltd,26-Jul-07,25-Jul-32,25,12000
+Seacroft Gate (Chase) - Block 2,Telecomms Apparatus,Leeds,,LS14,Seacroft Gate (Chase) block 2-Telecom App.,Vodafone Ltd.,30-Jan-04,29-Jan-29,25,12250
+Seacroft Gate (Chase) - Block 2,Telecomms Apparatus,Leeds,,LS14,Seacroft Gate (Chase) - Block 2 WYK 0414,Hutchinson3G Uk Ltd&Everything Everywhere Ltd,21-Aug-07,20-Aug-32,25,12750
