@@ -42,16 +42,6 @@
    });
 </script>
 
-<script type="text/javascript">
-function toggle(button)
-{
-  if(document.getElementById("load_data").value=="OFF"){
-   document.getElementById("load_data").value="ON";}
-
-  else if(document.getElementById("load_data").value=="ON"){
-   document.getElementById("load_data").value="OFF";}
-   
-</script>
 
     <br />
     <div align="center">
@@ -94,4 +84,14 @@ $(document).ready(function(){
  });
  
 });
+</script>
+
+<script type="text/javascript">
+function toggle(button)
+{
+  if(document.getElementById("load_data").value=="Decending"){
+   document.getElementById("load_data").value="Ascending";}
+
+  else if(document.getElementById("load_data").value=="Ascending"){
+   document.getElementById("load_data").value="Decending";}
 </script>
