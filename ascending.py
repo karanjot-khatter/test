@@ -7,7 +7,7 @@ outFile = open(outFileName, "w")
 data = csv.reader(open("data.csv"), delimiter=',')
 
 for line in sorted(data, key=operator.itemgetter(10), reverse=True):
-       print(line.strip(), file = outFile)
+       print(line, file = outFile)
 
 outFile.close()
 
