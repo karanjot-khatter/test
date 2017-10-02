@@ -45,7 +45,7 @@
 
     <br />
     <div align="center">
-     <button type="button" onclick="toggle(this); name="load_data" id="load_data" class="btn btn-info">Decending</button>
+     <button type="button" value="ON"  onclick="toggle(this); name="load_data" id="load_data" class="btn btn-info">Decending</button>
     </div>
     <br />
 	
@@ -89,9 +89,9 @@ $(document).ready(function(){
 <script type="text/javascript">
 function toggle(button)
 {
-  if(document.getElementById("load_data").value=="Decending"){
-   document.getElementById("load_data").value="Ascending";}
+  if(document.getElementById("load_data").value=="OFF"){
+   document.getElementById("load_data").value="ON";}
 
-  else if(document.getElementById("load_data").value=="Ascending"){
-   document.getElementById("load_data").value="Decending";}
+  else if(document.getElementById("load_data").value=="ON"){
+   document.getElementById("load_data").value="OFF";}
 </script>
