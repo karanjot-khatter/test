@@ -49,13 +49,6 @@
     <br />
 
 <script>
-function toggle(button)
-{
-  if(document.getElementById("load_data").value=="Ascending"){
-   document.getElementById("load_data").value="Descending";}
-
-  else if(document.getElementById("load_data").value=="Descending"){
-   document.getElementById("load_data").value="Ascending";}
    
 $(document).ready(function(){
  $('#load_data').click(function(){
@@ -86,6 +79,16 @@ $(document).ready(function(){
     table_data += '</table>';
     $('#employee_table').html(table_data);
    }
+   function toggle(button)
+{
+  if(document.getElementById("load_data").value=="Ascending"){
+   document.getElementById("load_data").value="Descending";}
+
+  else if(document.getElementById("load_data").value=="Descending"){
+   document.getElementById("load_data").value="Ascending";}
+   
+   }
+  
   });
  });
  
