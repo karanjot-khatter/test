@@ -40,16 +40,6 @@
     $('#employee_table').html(table_data);
    });
    
-function toggle(button)
-{	
-	if(document.getElementById("load_data").value=="Descending"){
-   document.getElementById("load_data").value="Ascending";}
-   
-   else if(document.getElementById("load_data").value=="Ascending"){
-   document.getElementById("load_data").value="Descending";}
-   
-}
-   
 $(document).ready(function(){
  $('#load_data').click(function(){
   $.ajax({
@@ -83,14 +73,23 @@ $(document).ready(function(){
  });
  
 });
+
+function toggle(button)
+{	
+	if(document.getElementById("load_data").value=="Descending"){
+   document.getElementById("load_data").value="Ascending";}
+   
+   else if(document.getElementById("load_data").value=="Ascending"){
+   document.getElementById("load_data").value="Descending";}
+   
+}
 </script>
 
-</script>
 <body>
 <form action="">
     <div align="center">
      <input type="button" id="load_data" value="Descending" style="color:blue"
-			onclick="toggle(this);">
+			onclick="toggle(this);" onclick = "function(data)">
 	</div>
 </form> </body> </html>
 
