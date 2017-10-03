@@ -40,16 +40,6 @@
     table_data += '</table>';
     $('#employee_table').html(table_data);
    });
-</script>
-
-    <br />
-    <div align="center">
-     <button type="button name="load_data" id="load_data" class="btn btn-info"value="Decending" onclick="toggle(this)"> Decending </button>
-    </form>
-   </div>
-    <br />
-	
-<script>
 
 $(document).ready(function(){
  $('#load_data').click(function(){
@@ -84,9 +74,7 @@ $(document).ready(function(){
  });
  
 });
-</script>
 
-<script type="text/javascript">
 function toggle(button)
 {
 if(document.getElementById("load_data").value=="Ascending"){
@@ -99,5 +87,11 @@ if(document.getElementById("load_data").value=="Ascending"){
 </script>
 
 <form action="">
+    <br />
+    <div align="center">
+     <button type="button name="load_data" id="load_data" class="btn btn-info"value="Decending" onclick="toggle(this)"</button>
+    </form>
+   </div>
+    <br />
 </form>
 
