@@ -39,7 +39,7 @@
     table_data += '</table>';
     $('#employee_table').html(table_data);
    });
-   
+
 $(document).ready(function(){
  $('#load_data').click(function(){
   $.ajax({
@@ -78,9 +78,12 @@ function toggle(button)
 {	
 	if(document.getElementById("load_data").value=="Descending"){
    document.getElementById("load_data").value="Ascending";}
+   function(data)
+   
    
    else if(document.getElementById("load_data").value=="Ascending"){
    document.getElementById("load_data").value="Descending";}
+   function(data2)
    
 }
 </script>
