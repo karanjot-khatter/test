@@ -15,7 +15,6 @@
    </div>
   </div>
  </body>
-</html>
 <script type="text/javascript">
  $.get('data.csv', function(data) {
     var employee_data = data.split(/\r?\n|\r/);
@@ -74,24 +73,24 @@ $(document).ready(function(){
  });
  
 });
+</script>
 
+<script type="text/javascript">
 function toggle(button)
 {
-if(document.getElementById("load_data").value=="Ascending"){
-   document.getElementById("load_data").value="Decending";}
-
-  else if(document.getElementById("load_data").value=="Decending"){
+if(document.getElementById("load_data").value=="Decending"){
    document.getElementById("load_data").value="Ascending";}
+
+  else if(document.getElementById("load_data").value=="Ascending"){
+   document.getElementById("load_data").value="Decending";}
 
 }
 </script>
-
+<body>
 <form action="">
-    <br />
     <div align="center">
      <input type="button" id="load_data" value="Ascending" style="color:blue"
-    </form>
-   </div>
-    <br />
-</form>
+			onclick="toggle(this);">
+	</div>
+</form> </body> </html>
 
