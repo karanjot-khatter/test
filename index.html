@@ -16,8 +16,8 @@
   </div>
  </body>
 <script type="text/javascript">
-
-$(function1).ready(function(){
+function method1() {
+$(document).ready(function(){
  $.get('data.csv', function(data) {
     var employee_data = data.split(/\r?\n|\r/);
     var table_data = '<table class="table table-bordered table-striped">';
@@ -41,12 +41,13 @@ $(function1).ready(function(){
     table_data += '</table>';
     $('#employee_table').html(table_data);
    });
-   });
+   })
+   };
   
-$(function2).ready(function(){
+function method2() {
+$(document).ready(function(){
  $('#load_data').click(function(){
-  $.when($.ajax(function())).then(function(){
-  function1;
+  $.ajax({
    url:"data2.csv",
    dataType:"text",
    success:function(data)
@@ -76,7 +77,9 @@ $(function2).ready(function(){
   });
  });
  
-});
+})
+};
+
 function toggle(button)
 {	
 	if(document.getElementById("load_data").value=="Ascending"){
@@ -88,7 +91,12 @@ function toggle(button)
    
 }
 
-
+$.ajax({
+   url:method1(),
+   success:function(){
+   method2();
+}
+})
 </script>
 
 <body>
