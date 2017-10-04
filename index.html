@@ -79,6 +79,13 @@ $(document).ready(function(){
 });
 };
 
+$.ajax({
+   url:method1(),
+   success:function(){
+   method2();
+}
+})
+
 function toggle(button)
 {	
 	if(document.getElementById("load_data").value=="Ascending"){
