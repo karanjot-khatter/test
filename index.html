@@ -84,18 +84,20 @@ $(document).ready(function(){
 function toggle(button)
 {	
 	if(document.getElementById("load_data").value=="Ascending"){
-   document.getElementById("load_data").value="Descending";}
+   document.getElementById("load_data").value="Descending";
    
    $.ajax({
    url:method1(),
    success:function(){
    method2();
+  }
 }
 })
+
    
    
    else if(document.getElementById("load_data").value=="Descending"){
-   document.getElementById("load_data").value="Ascending";}
+   document.getElementById("load_data").value="Ascending";
    
    $.ajax({
    url:method2(),
@@ -104,6 +106,8 @@ function toggle(button)
 }
 })
    
+}
+
 }
 </script>
 
