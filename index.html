@@ -88,10 +88,10 @@ $.ajax({
 
 $('#load_data').click(function(){
     if(condition == 'true'){
-        $.when(function2()).then(function1());
+        $.when(function1()).then(function2());
     }
     else {
-        $.when(function1()).then(function2());
+        doThis(someVariable);
     }
 });
 
