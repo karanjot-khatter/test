@@ -91,12 +91,14 @@ function toggle(button)
    
 }
 
-$.ajax({
-   url:method2(),
-   success:function(){
-   method1();
-}
-})
+$('#load_data').click(function(){
+    if(condition == 'true'){
+        $.when(function1()).then(function2());
+    }
+    else {
+        $.when(function2()).then(function1());
+    }
+});
 </script>
 
 <body>
