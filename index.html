@@ -86,14 +86,6 @@ $.ajax({
 }
 })
 
-$('#load_data').click(function(){
-    if(condition == 'true'){
-        $.when(function1()).then(function2());
-    }
-    else {
-        doThis(someVariable);
-    }
-});
 
 function toggle(button)
 {	
@@ -106,6 +98,10 @@ function toggle(button)
    
 }
 
+function goBack(){
+ $('#load_data').click(function(){
+ function1();
+ })}
 </script>
 
 <body>
