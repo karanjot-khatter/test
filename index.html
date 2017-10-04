@@ -80,16 +80,16 @@ $(document).ready(function(){
  
 });
 };
-
+function forward(){
 $.ajax({
    url:method1(),
    success:function(){
    method2();
-   url:method2(),
-   success:function(){
-   method1();
 }
 })
+}
+
+return forward()
 
 function toggle(button)
 {	
