@@ -43,6 +43,14 @@ $(document).ready(function(){
    });
    });
  };
+ 
+ $.ajax({
+   url:method1(),
+   success:function(){
+   method2();
+}
+})
+
 function method2(){
 $(document).ready(function(){
  $('#load_data').click(function(){
@@ -82,7 +90,7 @@ $(document).ready(function(){
 $.ajax({
    url:method1(),
    success:function(){
-   method2();
+   method1();
 }
 })
 
@@ -97,12 +105,6 @@ function toggle(button)
    document.getElementById("load_data").value="Ascending";}
    
 }
-
-function goBack(){
-$(document).ready(function(){
- $('#load_data').click(function(){
- function1();
- })}
 </script>
 
 <body>
