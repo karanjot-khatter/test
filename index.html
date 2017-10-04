@@ -85,6 +85,9 @@ $.ajax({
    url:method1(),
    success:function(){
    method2();
+   url:method2(),
+   success:function(){
+   method1();
 }
 })
 
