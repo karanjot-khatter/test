@@ -86,6 +86,13 @@ $.ajax({
 }
 })
 
+$.ajax({
+   url:method2(),
+   success:function(){
+   method1();
+}
+})
+
 function toggle(button)
 {	
 	if(document.getElementById("load_data").value=="Ascending"){
