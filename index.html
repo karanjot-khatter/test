@@ -81,9 +81,12 @@ $(document).ready(function(){
 };
 
 $.ajax({
-   url:method2(),
+   url:method1(),
    success:function(){
-   method1();
+   method2();
+   url: method2(),
+   success:function() {
+   function1();
 }
 })
 
