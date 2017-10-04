@@ -81,30 +81,21 @@ $(document).ready(function(){
 });
 };
 
-function forward() {
 $.ajax({
+   url:method1(),
+   success:function(){
+   method2();
+	$('#load_data').click(function(){
    url:method1(),
    success:function(){
    method2();
 }
 })
-}
 
-function backward(){
-$.ajax({
-   url:method2(),
-   success:function(){
-   method1();
-}
-})
-}
 
-$.ajax({
-   url:forward(),
-   success:function(){
-   backward();
-}
-})
+
+
+
 
 function toggle(button)
 {	
