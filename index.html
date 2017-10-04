@@ -44,7 +44,7 @@ $(document).ready(function(){
    });
    });
  };
- 
+
 function method2(){
 $(document).ready(function(){
  $('#load_data').click(function(){
@@ -80,16 +80,15 @@ $(document).ready(function(){
  
 });
 };
-function forward(){
+
 $.ajax({
    url:method1(),
    success:function(){
    method2();
+   method1();
 }
 })
 }
-
-return forward()
 
 function toggle(button)
 {	
