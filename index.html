@@ -92,13 +92,21 @@ function toggle(button)
 }
 
 $('#load_data').click(function(){
-    if(condition == 'true'){
-        $.when(function1()).then(function2());
+    if (condition == 'true'){
+        function1(someVariable, function() {
+          function2(someOtherVariable);
+        });
     }
     else {
-        $.when(function2()).then(function1());
+        doThis(someVariable);
     }
 });
+
+
+function function1(param, callback) {
+  ...do stuff
+  callback();
+} 
 </script>
 
 <body>
