@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 function method2(){
 $(document).ready(function(){
- $('#load_data').click(function(){
+ $('#load_data').click(function(method1){
   $.ajax({
    url:"data2.csv",
    dataType:"text",
@@ -85,10 +85,6 @@ $.ajax({
    url:method1(),
    success:function(){
    method2();
-   }
-   url:method2(),
-   success:function(){
-   method1();
 }
 })
 
