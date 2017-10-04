@@ -81,32 +81,20 @@ $(document).ready(function(){
 });
 };
 
-function toggle(button)
-{	
-	if(document.getElementById("load_data").value=="Ascending"){
-   document.getElementById("load_data").value="Descending";
-   
-   $.ajax({
+$.ajax({
    url:method1(),
    success:function(){
    method2();
-  }
 }
 })
 
-   
-   
+function toggle(button)
+{	
+	if(document.getElementById("load_data").value=="Ascending"){
+   document.getElementById("load_data").value="Descending";}
+ 
    else if(document.getElementById("load_data").value=="Descending"){
-   document.getElementById("load_data").value="Ascending";
-   
-   $.ajax({
-   url:method2(),
-   success:function(){
-   method1();
-}
-})
-   
-}
+   document.getElementById("load_data").value="Ascending";}
 
 }
 </script>
