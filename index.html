@@ -16,7 +16,6 @@
   </div>
  </body>
 <script type="text/javascript">
-function method1() {
 $(document).ready(function(){
  $.get('data.csv', function(data) {
     var employee_data = data.split(/\r?\n|\r/);
@@ -42,9 +41,8 @@ $(document).ready(function(){
     $('#employee_table').html(table_data);
    });
    })
-   };
+ ;
   
-function method2() {
 $(document).ready(function(){
  $('#load_data').click(function(){
   $.ajax({
@@ -78,7 +76,7 @@ $(document).ready(function(){
  });
  
 })
-};
+;
 
 function toggle(button)
 {	
