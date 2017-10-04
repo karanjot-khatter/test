@@ -80,23 +80,20 @@ $(document).ready(function(){
 });
 };
 
-function forward(){
+function toggle1(){
 $.ajax({
    url:method1(),
    success:function(){
    method2();
+    $('#load_data').click(function(){
+	url:method2(),
+	success:function(){
+	method1();
 };
 });
-};
+}};
+)};
 
-function backwards(){
-$.ajax({
-   url:method2(),
-   success:function(){
-   method1();
-};
-});
-};
 
 
 function toggle(button)
